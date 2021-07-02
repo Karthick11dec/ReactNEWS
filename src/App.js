@@ -1,24 +1,14 @@
+import React, { Fragment } from "react";
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from "./Components/Home";
-import About from './Components/About';
-import Contact from './Components/Contact';
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 function App() {
 	return (
-		<BrowserRouter>
-			<Switch>
-				<Route path='/' exact>
-					<Home />
-				</Route>
-				<Route path='/about' exact>
-					<About />
-				</Route>
-				<Route path='/contact' exact>
-					<Contact />
-				</Route>
-			</Switch>
-		</BrowserRouter>
+		<Fragment>
+			<Navbar />
+			<Footer />
+		</Fragment>
 	);
 }
 export default App;
